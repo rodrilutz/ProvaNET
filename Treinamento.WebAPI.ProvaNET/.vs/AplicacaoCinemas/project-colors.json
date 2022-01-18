@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "47ca962f-4c95-4d1c-ae6b-2ed3d164feec": {
+      "ProjectGuid": "47ca962f-4c95-4d1c-ae6b-2ed3d164feec",
+      "DisplayName": "AplicacaoCinemas.WebApi",
+      "ColorIndex": 0
+    }
+  },
+  "NextColorIndex": 1
+}

@@ -1,0 +1,295 @@
+{
+	"info": {
+		"_postman_id": "59bb9ab0-cfb8-4af8-b9b0-3ee77918f8b5",
+		"name": "Test",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "prova",
+			"item": [
+				{
+					"name": "CadastroFilme",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"Titulo\": \"Avatar: The Way of Water\",\r\n    \"Duracao\": 120,\r\n    \"sinopse\": \"The Way of Water é a continuação de Avatar, com sua data de lançamento prevista para 16 de dezembro de 2022\"\r\n    \r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/mundodocinema/filmes",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"mundodocinema",
+								"filmes"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "AtualizarFilme",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"Titulo\" : \"Avatar: The Way of Water\",\r\n    \"Duracao\" : 130,\r\n    \"Sinopse\" : \"The Way of Water é a continuação de Avatar, com sua data de lançamento prevista para 16 de dezembro de 2022\"\r\n    \r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/mundodocinema/filmes/453f70fa-6f0e-4c2e-ac79-43f548a42e91",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"mundodocinema",
+								"filmes",
+								"453f70fa-6f0e-4c2e-ac79-43f548a42e91"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ListarFilme",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/mundodocinema/filmes/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"mundodocinema",
+								"filmes",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ListarFilmePorID",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/mundodocinema/filmes/453f70fa-6f0e-4c2e-ac79-43f548a42e91",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"mundodocinema",
+								"filmes",
+								"453f70fa-6f0e-4c2e-ac79-43f548a42e91"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CadastrarSessao",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"Dia\": \"2022-01-17\",\r\n    \"Preco\": 59,\r\n    \"InicioHora\": 20,\r\n    \"InicioMinuto\": 30,\r\n    \"QuantidadeLugares\": 50,\r\n    \"IdFilme\": \"453f70fa-6f0e-4c2e-ac79-43f548a42e91\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/mundodocinema/sessoes",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"mundodocinema",
+								"sessoes"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "AtualizarSessao",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"Dia\" : \"2022-01-18\",\r\n    \"Preco\" : 49,\r\n    \"InicioHora\" : 20,\r\n    \"InicioMinuto\" : 30,\r\n    \"QuantidadeLugares\" : 60,\r\n    \"IdFilme\" : \"453f70fa-6f0e-4c2e-ac79-43f548a42e91\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/mundodocinema/sessoes/453f70fa-6f0e-4c2e-ac79-43f548a42e91",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"mundodocinema",
+								"sessoes",
+								"453f70fa-6f0e-4c2e-ac79-43f548a42e91"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Comprar",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/mundodocinema/sessoes/adquiriringresso/453f70fa-6f0e-4c2e-ac79-43f548a42e91,10",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"mundodocinema",
+								"sessoes",
+								"adquiriringresso",
+								"453f70fa-6f0e-4c2e-ac79-43f548a42e91,10"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ListarSessao",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/mundodocinema/sessoes/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"mundodocinema",
+								"sessoes",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ListarSessaoPorID",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/mundodocinema/sessoes/453f70fa-6f0e-4c2e-ac79-43f548a42e91",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"mundodocinema",
+								"sessoes",
+								"453f70fa-6f0e-4c2e-ac79-43f548a42e91"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
